@@ -164,6 +164,8 @@ EPAair_NC1819_filtered <- filter(EPAair_NC1819, Site.Name %in% c("Linville Falls
                                                                  "Bryson City", 
                                                                  "Millbrook School")) %>% group_by(Date, Site.Name, AQS_PARAMETER_DESC, COUNTY) %>% summarise(mean_DAILY_AQI_VALUE = mean(DAILY_AQI_VALUE), mean_latitude = mean(SITE_LATITUDE), mean_longitude = mean(SITE_LONGITUDE)) %>% mutate(month = month(Date), year = year(Date)) 
 
+dim(EPAair_NC1819_filtered)
+
 
 #9
 
