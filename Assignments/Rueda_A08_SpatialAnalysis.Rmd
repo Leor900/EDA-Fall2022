@@ -105,7 +105,7 @@ names(USGS.NWIS.gage)
 
 9. What columns in the dataset contain the x and y coordinate values, respectively? 
 
-> **ANSWER:** The columns of the dataset that contain the y coordinate values is dec_long_va (longitud) and the x coordinate values is dec_lat_va (latitud). 
+> **ANSWER:** The column of the dataset that contains the y coordinate value is dec_long_va (longitude) and the x coordinate value is dec_lat_va (latitude). 
 
 
 ### Convert the dataframe to a spatial features ("sf") dataframe
@@ -130,7 +130,7 @@ names(USGS.NWIS.gage.sf)
 
 12. What new field(s) appear in the sf dataframe created? What field(s), if any, disappeared?
 
->**ANSWER:**  The new field that appear in the dataset created is called "geometry" and the fields that dissapear are "dec_long_va" and "dec_lat_va".
+>**ANSWER:**  The new field that appears in the dataset created is called "geometry" and the fields that disappear are "dec_long_va" and "dec_lat_va".
 
 
 ### Plot the gage locations on top of the counties
