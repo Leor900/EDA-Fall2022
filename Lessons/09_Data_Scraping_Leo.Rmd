@@ -280,11 +280,13 @@ the_df <- bind_rows(the_dfs)
 #Plot, because it's fun and rewarding
 ggplot(the_df,aes(x=Date,y=Avg_Withdrawals_mgd)) + 
   geom_line() + 
-  geom_smooth(method="loess",se=FALSE) +
-  labs(title = paste("2020 Water usage data for",the_registrant),
-       subtitle = the_facility_name,
-       y="Withdrawal (mgd)",
-       x="Date")
+  geom_smooth(method="loess",se=FALSE) 
+
+#+
+#  labs(title = paste("2020 Water usage data for",the_registrant),
+#       subtitle = the_facility_name,
+#       y="Withdrawal (mgd)",
+#       x="Date")
 ```
 
 # Part 3. Web Crawling
@@ -338,7 +340,7 @@ df_2020 <- bind_rows(dfs_2020)
 
 
 #Plot
-ggplot(df_2020,aes(y = Avg_Withdrawals_mgd, x=Facility_type)) +
+ggplot(df_2020,aes(y = Avg_Withdrawals_mgd, x=Facility_name)) +
   geom_boxplot()
 
 ```
